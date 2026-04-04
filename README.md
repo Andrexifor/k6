@@ -7,3 +7,7 @@ Opcion gratuita de google, lightshot; sirve para pruebas de performance.
 
 Opcion mas robusta "https://www.webpagetest.org/"
 <img width="1919" height="1033" alt="image" src="https://github.com/user-attachments/assets/e2c06758-0ff5-40f1-b12b-d3a5b8f782e2" />
+
+Para ejecutar el k6, se debe ingresar el siguiente comando en CMD:
+-> Ingreso a ruta donde esta el script
+-> k6 run stages.js
