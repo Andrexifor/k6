@@ -16,3 +16,7 @@ Smoke Test (Prueba de Humo): verifica que su sistema puede manejar una carga mí
 Load Test (Prueba de Carga): se ocupa principalmente de evaluar el rendimiento de su sistema en términos de usuarios concurrentes o solicitudes por segundo.
 Stress Test (Prueba de Estrés) y Spike testing (Prueba de Pico): se ocupan de evaluar los límites de su sistema y la estabilidad en condiciones extremas.
 Soak Test (Prueba de Resistencia): le informa sobre la fiabilidad y el rendimiento de su sistema durante un periodo de tiempo prolongado.
+
+Configuracion de red:
+htop: Permite monitorear los recursos de hardware
+iftop: Permite monitorear el consumo de ancho de banda y red
