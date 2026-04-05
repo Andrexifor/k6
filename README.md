@@ -11,3 +11,8 @@ Opcion mas robusta "https://www.webpagetest.org/"
 Para ejecutar el k6, se debe ingresar el siguiente comando en CMD:
 -> Ingreso a ruta donde esta el script
 -> k6 run stages.js
+
+Smoke Test (Prueba de Humo): verifica que su sistema puede manejar una carga mínima, sin ningún problema.
+Load Test (Prueba de Carga): se ocupa principalmente de evaluar el rendimiento de su sistema en términos de usuarios concurrentes o solicitudes por segundo.
+Stress Test (Prueba de Estrés) y Spike testing (Prueba de Pico): se ocupan de evaluar los límites de su sistema y la estabilidad en condiciones extremas.
+Soak Test (Prueba de Resistencia): le informa sobre la fiabilidad y el rendimiento de su sistema durante un periodo de tiempo prolongado.
