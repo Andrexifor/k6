@@ -21,7 +21,7 @@ Configuracion de red:
 htop: Permite monitorear los recursos de hardware
 iftop: Permite monitorear el consumo de ancho de banda y red
 
-
+- Integracion con influxdb
 docker exec -it influxdb influx
 
 CREATE DATABASE myk6db
@@ -31,7 +31,17 @@ SHOW MEASUREMENTS
 Ejecucion local K6 con graficos en Grafi Local
 k6 run --out influxdb=http://localhost:8086/myk6db Stress.js
 Ejecuccion en la nube
+
+
 Primero ingresas con tu token
 k6 cloud login --token 13316832fd4c64f3702c570104d0ce34102d8ec8285d970deaf4901f87461ac7
 Ejecutas el script
 k6 --out cloud run ckeck.js
+
+- Integracion con GIT
+
+Se agrego una carpeta dentro de otra, donde se crearia un .yml con la configuracion. Se realizo con https://github.com/Andrexifor/fake-store-api.git. 
+
+git add .
+git commit -m "Added performance test_8"
+git push origin master
