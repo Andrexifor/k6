@@ -23,4 +23,4 @@ jobs:
           usedocker: true
       - uses: grafana/k6-action@v0.2.0
         with:
-          script:  scripts/stress.js
+          filename: scripts/Stress.js
