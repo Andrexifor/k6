@@ -2,11 +2,8 @@
 import http from "k6/http"
 
 export let options = {
-    Stages: [
-        { duration: '60s', target: 10 }, 
-        { duration: '180s', target: 10 }, 
-        { duration: '60s', target: 0 },  
-    ]
+    vus: 1,
+    duration: '20s',
 }        
 
 export default function () {
