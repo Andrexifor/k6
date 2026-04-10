@@ -1,3 +1,47 @@
 # K6
 Curso de Performance Testing en Node.js con K6 - Apuntes
 Javascript, para testing
+
+Opcion gratuita de google, lightshot; sirve para pruebas de performance.
+<img width="1919" height="582" alt="image" src="https://github.com/user-attachments/assets/315cb2e1-bfc6-426b-bd25-6b328a268414" />
+
+Opcion mas robusta "https://www.webpagetest.org/"
+<img width="1919" height="1033" alt="image" src="https://github.com/user-attachments/assets/e2c06758-0ff5-40f1-b12b-d3a5b8f782e2" />
+
+Para ejecutar el k6, se debe ingresar el siguiente comando en CMD:
+-> Ingreso a ruta donde esta el script
+-> k6 run stages.js
+
+Smoke Test (Prueba de Humo): verifica que su sistema puede manejar una carga mínima, sin ningún problema.
+Load Test (Prueba de Carga): se ocupa principalmente de evaluar el rendimiento de su sistema en términos de usuarios concurrentes o solicitudes por segundo.
+Stress Test (Prueba de Estrés) y Spike testing (Prueba de Pico): se ocupan de evaluar los límites de su sistema y la estabilidad en condiciones extremas.
+Soak Test (Prueba de Resistencia): le informa sobre la fiabilidad y el rendimiento de su sistema durante un periodo de tiempo prolongado.
+
+Configuracion de red:
+htop: Permite monitorear los recursos de hardware
+iftop: Permite monitorear el consumo de ancho de banda y red
+
+- Integracion con influxdb
+docker exec -it influxdb influx
+
+CREATE DATABASE myk6db
+SHOW DATABASES
+SHOW MEASUREMENTS
+
+Ejecucion local K6 con graficos en Grafi Local
+k6 run --out influxdb=http://localhost:8086/myk6db Stress.js
+Ejecuccion en la nube
+
+
+Primero ingresas con tu token
+k6 cloud login --token 13316832fd4c64f3702c570104d0ce34102d8ec8285d970deaf4901f87461ac7
+Ejecutas el script
+k6 --out cloud run ckeck.js
+
+- Integracion con GIT
+
+Se agrego una carpeta dentro de otra, donde se crearia un .yml con la configuracion. Se realizo con https://github.com/Andrexifor/fake-store-api.git. 
+
+git add .
+git commit -m "Added performance test_8"
+git push origin master
